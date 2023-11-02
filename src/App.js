@@ -18,7 +18,8 @@ function App() {
 
     const removeLast = ()=>{
       if (value) {
-        setValue(value.slice(0,-1))
+        let result = value.slice(0,-1)
+        setValue(result)
       }
     }
 
@@ -49,7 +50,7 @@ function App() {
             <Button className='w-1/4 h-full me-2' style={{backgroundColor:"#00C0F0",fontWeight:"bold"}} onClick={()=>display("7")}>7</Button>
             <Button className='w-1/4 h h-full me-2' style={{backgroundColor:"#00C0F0",fontWeight:"bold"}} onClick={()=>display("8")}>8</Button>
             <Button className='w-1/4 h-full me-2.5' style={{backgroundColor:"#00C0F0",fontWeight:"bold"}} onClick={()=>display("9")}>9</Button>
-            <Button className='w-1/6 md:w-1/5 h-full' style={{backgroundColor:"#005063",fontWeight:"bold"}} onClick={()=>display("×")}>×</Button>
+            <Button className='w-1/6 md:w-1/5 h-full' style={{backgroundColor:"#005063",fontWeight:"bold"}} onClick={()=>display("*")}>×</Button>
           </div>
           <div className='mt-2 w-full h-14 md:h-16'>
             <Button className='w-1/4 h-full me-2' style={{backgroundColor:"#00C0F0",fontWeight:"bold"}} onClick={()=>display("4")}>4</Button>
