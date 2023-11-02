@@ -34,8 +34,8 @@ function App() {
 
 
   return (
-    <div className='h-screen w-screen bg-sky-800 flex justify-center'>
-        <div className='w-screen md:w-2/5 h-3/5 flex justify-center'>
+    <div className='h-screen w-screen bg-sky-800 flex justify-center items-center'>
+        <div className='w-full md:w-2/5 h-4/5 flex justify-center'>
           <div className='flex-col w-full'>
             <h1 className='text-center font-extrabold mt-5 mb-4' style={{color:'#3cdfff'}}>REACT CALCULATOR</h1>
             <input type="text" value={value} className='bg-gray-800 w-full h-16 rounded-lg text-white text-right text-2xl md:text-3xl px-3 outline-none' placeholder='0' readOnly/>
